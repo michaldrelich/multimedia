@@ -13,16 +13,11 @@ import android.graphics.BitmapShader
 
 
 class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) {
-    //drawing path
     private var drawPath: Path? = null
-    //drawing and canvas paint
     private var drawPaint: Paint? = null
     private var canvasPaint: Paint? = null
-    //initial color
     private var paintColor = -0x1000000
-    //canvas
     private var drawCanvas: Canvas? = null
-    //canvas bitmap
     private var canvasBitmap: Bitmap? = null
 
     @SuppressLint("NewApi")
@@ -57,7 +52,6 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val touchX = event.x
         val touchY = event.y
-        //respond to down, move and up events
         when (event.action) {
             MotionEvent.ACTION_DOWN -> drawPath?.moveTo(touchX, touchY)
             MotionEvent.ACTION_MOVE -> drawPath?.lineTo(touchX, touchY)
@@ -68,7 +62,6 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
             }
             else -> return false
         }
-        //redraw
         invalidate()
         return true
     }
@@ -82,7 +75,7 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
             patternBMP,
             Shader.TileMode.REPEAT, Shader.TileMode.REPEAT
         )
-        drawPaint?.setColor(0xFFFFFFFF);
-        drawPaint?.setShader(patternBMPshader);
+        drawPaint?.setColor(0xFFFFFFFF)
+        drawPaint?.setShader(patternBMPshader)
     }
 }
