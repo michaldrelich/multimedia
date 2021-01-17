@@ -17,9 +17,8 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/action_take_photo"
-        android:orderInCategory="10"
+        android:orderInCategory="4"
         android:title="@string/menu_photo"
-        android:visible="false"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_get_gallery"
