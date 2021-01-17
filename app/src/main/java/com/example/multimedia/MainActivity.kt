@@ -798,7 +798,7 @@ class MainActivity : AppCompatActivity() {
 
         // show intermediate step results
         // grid created here to do that
-        showResultLayouts()
+        //showResultLayouts()
 
         val mRgbMat = Mat()
         Utils.bitmapToMat(bitmap, mRgbMat)

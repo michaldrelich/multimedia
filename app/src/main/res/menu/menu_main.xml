@@ -4,28 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
-    <item android:id="@+id/action_open_img"
-        android:title="@string/menu_open"
-        android:orderInCategory="1"
-        app:showAsAction="never" />
-    <item android:id="@+id/action_process_image"
-        android:title="@string/menu_cut"
-        android:orderInCategory="2"
-        app:showAsAction="never" />
-    <item android:id="@+id/action_take_photo"
-        android:title="@string/menu_photo"
+    <item
+        android:id="@+id/action_open_img"
         android:orderInCategory="3"
+        android:title="@string/menu_open"
         app:showAsAction="never" />
-    <item android:id="@+id/action_get_gallery"
+    <item
+        android:id="@+id/action_process_image"
+        android:orderInCategory="2"
+        android:title="@string/menu_cut"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_take_photo"
+        android:orderInCategory="10"
+        android:title="@string/menu_photo"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_get_gallery"
+        android:orderInCategory="1"
         android:title="@string/menu_gallery"
-        android:orderInCategory="4"
         app:showAsAction="never" />
-    <item android:id="@+id/action_get_color"
+    <item
+        android:id="@+id/action_get_color"
+        android:orderInCategory="2"
         android:title="@string/menu_color"
-        android:orderInCategory="5"
         app:showAsAction="never" />
-    <item android:id="@+id/action_get_texture"
-        android:title="@string/menu_texture"
+    <item
+        android:id="@+id/action_get_texture"
         android:orderInCategory="6"
+        android:title="@string/menu_texture"
+        android:visible="false"
         app:showAsAction="never" />
 </menu>

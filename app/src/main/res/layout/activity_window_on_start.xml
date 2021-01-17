@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="326dp"
         android:onClick="openKotlin"
-        android:text="Kotlin"
+        android:text="@string/ze_zdjecia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:onClick="openUnity"
-        android:text="Unity"
+        android:text="@string/na_zywo"
         app:layout_constraintEnd_toEndOf="@+id/button_kotlin"
         app:layout_constraintStart_toStartOf="@+id/button_kotlin"
         app:layout_constraintTop_toBottomOf="@+id/button_kotlin" />
