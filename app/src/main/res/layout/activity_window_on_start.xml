@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
+        android:onClick="openUnity"
         android:text="Unity"
         app:layout_constraintEnd_toEndOf="@+id/button_kotlin"
         app:layout_constraintStart_toStartOf="@+id/button_kotlin"

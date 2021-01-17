@@ -18,4 +18,9 @@ public class WindowOnStart extends AppCompatActivity {
         Button button = (Button) findViewById(R.id.button_kotlin);
         startActivity(intent);
     }
+
+    public void openUnity(View view) {
+        Intent intent = getPackageManager().getLaunchIntentForPackage("com.unity.arfoundation.samples");
+        startActivity(intent);
+    }
 }
