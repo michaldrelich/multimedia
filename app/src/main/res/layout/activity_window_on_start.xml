@@ -8,23 +8,43 @@
 
     <Button
         android:id="@+id/button_kotlin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="326dp"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        android:background="@color/colorPrimary"
         android:onClick="openKotlin"
-        android:text="@string/ze_zdjecia"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/from_image"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_unity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/button_unity"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="136dp"
+        android:background="@color/colorPrimary"
+        android:onClick="openUnity"
+        android:text="@string/live_ar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_kotlin" />
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:onClick="openUnity"
-        android:text="@string/na_zywo"
-        app:layout_constraintEnd_toEndOf="@+id/button_kotlin"
-        app:layout_constraintStart_toStartOf="@+id/button_kotlin"
-        app:layout_constraintTop_toBottomOf="@+id/button_kotlin" />
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="162dp"
+        android:contentDescription="@string/paintbrush"
+        app:layout_constraintBottom_toTopOf="@+id/button_kotlin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/paintbrush_150x150" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

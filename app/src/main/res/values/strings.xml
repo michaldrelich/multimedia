@@ -8,6 +8,7 @@
     <string name="menu_gallery">Open Gallery</string>
     <string name="menu_color">Choose Color</string>
     <string name="menu_texture">Choose Texture</string>
-    <string name="ze_zdjecia">Ze zdjęcia</string>
-    <string name="na_zywo">Na żywo</string>
+    <string name="from_image">FROM IMAGE</string>
+    <string name="live_ar">LIVE AR</string>
+    <string name="paintbrush">paintbrush</string>
 </resources>
